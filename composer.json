@@ -1,43 +1,27 @@
 {
-    "name": "aboykoy/wordpress-project",
+    "name": "your-company/your-wordpress-project",
     "type": "project",
     "repositories": [
         {
-            "type": "composer",
-            "url": "https://wpackagist.org"
-        },
-        {
             "type": "package",
             "package": {
-                "name": "theme-uncode",
+                "name": "aboykoy/theme-uncode",
                 "type": "wordpress-theme",
                 "version": "2.4.0.2",
                 "dist": {
                     "type": "zip",
-                    "url": "E:/专项事务/20250724Sequoia网站分析/wordpress主题：UNCODE+V2.4.0.2【2021年最新版】2021-08-11更新.zip"
+                    "url": "E:/专项事务/20250724Sequoia网站分析/wordpress主题：UNCODE+V2.4.0.2【2021年最新版】2021-08-11更新/UNCODE V2.4.0.2/uncode-2.4.0.2.zip"
                 }
             }
-        },
-        {
-            "type": "path",
-            "url": "E:/专项事务/20250724Sequoia网站分析/WP Rocket/*"
         }
     ],
     "require": {
         "php": ">=7.4",
         "composer/installers": "^2.0",
-        "wpackagist-plugin/yoast-seo": "*",
-        "wp-rocket/wp-rocket": "3.16.3",
-        "wpackagist-plugin/gravity-forms": "2.9.9",
-        "wpackagist-plugin/google-site-kit": "1.154.0",
-        "wpackagist-plugin/slider-revolution": "6.7.34",
-        "wpackagist-plugin/metronet-profile-picture": "*",
-        "wpackagist-plugin/ninja-tables": "*",
-        "theme-uncode": "2.4.0.2"
+        "aboykoy/theme-uncode": "2.4.0.2"
     },
     "extra": {
         "installer-paths": {
-            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
             "wp-content/themes/{$name}/": ["type:wordpress-theme"]
         }
     },
@@ -45,5 +29,7 @@
         "allow-plugins": {
             "composer/installers": true
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
