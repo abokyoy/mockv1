@@ -1,0 +1,27 @@
+# WordPress核心文件（通常不修改）
+wp-admin/
+wp-includes/
+
+# 上传的媒体和缓存
+wp-content/uploads/
+wp-content/cache/
+
+# 插件和主题（第三方依赖由Composer管理）
+wp-content/plugins/*
+!wp-content/plugins/.gitkeep
+wp-content/themes/*
+!wp-content/themes/.gitkeep
+!wp-content/themes/your-child-theme/  # 保留自定义子主题
+
+# 配置文件（含敏感信息）
+wp-config.php
+local-config.php
+
+# Composer/NPM依赖
+/vendor/
+/node_modules/
+
+# 日志和临时文件
+debug.log
+*.log
+*.tmp
